@@ -663,6 +663,46 @@ video {
   width: 95%;
 }
 
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
 .max-w-\[80rem\] {
   max-width: 80rem;
 }
@@ -1150,6 +1190,10 @@ textarea {
 
   .xl\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .xl\:pt-1 {
+    padding-top: 0.25rem;
   }
 
   .xl\:text-6xl {

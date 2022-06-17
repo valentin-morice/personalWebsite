@@ -323,7 +323,11 @@
           class="w-16 h-16 text-gray-300"
         ></ion-icon>
       </div>
-      <form action="" class="flex flex-col gap-6 mx-auto max-w-[50rem] mb-40">
+      <form
+        netlify
+        id="contactForm"
+        class="flex flex-col gap-6 mx-auto max-w-[50rem] mb-40"
+      >
         <h3 class="text-2xl font-light text-center">Want to Work Together?</h3>
         <p class="mb-6 text-center">
           Please drop me a message using the form below.
@@ -355,6 +359,14 @@
           rows="10"
           placeholder="Your message"
         ></textarea>
+        <button
+          value="Submit"
+          form="contactForm"
+          type="submit"
+          class="w-32 text-xl font-semibold py-3 px-6 text-white border-2 border-gray-800 bg-gray-800 rounded-lg hover:border-blue-900 hover:bg-blue-900 transition-all"
+        >
+          Submit
+        </button>
       </form>
     </section>
     <footer class="bg-gray-200 rounded-t-3xl max-w-[80rem] mx-auto">
