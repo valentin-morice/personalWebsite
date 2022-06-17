@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-100 text-lg text-gray-800 px-4 sm:px-12">
+    <nav class="py-8 max-w-[80rem] mx-auto flex items-center justify-between">
+      <p class="bg-gray-300 py-2 px-4 text-white rounded-md italic">
+        morice.io
+      </p>
+      <ion-icon
+        name="menu-outline"
+        id="hamburger"
+        class="sm:hidden h-10 w-10"
+      ></ion-icon>
+      <div class="hidden sm:flex gap-8 sm:gap-16">
+        <p class="hover:text-blue-900 transition-all">
+          <a href="#learnMore">About</a>
+        </p>
+        <p class="hover:text-blue-900 transition-all">
+          <a href="#skills">Skills</a>
+        </p>
+        <p class="hover:text-blue-900 transition-all">
+          <a href="#contact">Contact</a>
+        </p>
+      </div>
+      <div id="ex1" class="modal">
+        <p class="mb-4 mt-4">
+          <a href="#learnMore" rel="modal:close">About</a>
+        </p>
+        <p class="mb-4">
+          <a href="#skills" rel="modal:close">Skills</a>
+        </p>
+        <p class="mb-4">
+          <a href="#contact" rel="modal:close">Contact</a>
+        </p>
+      </div>
+    </nav>
+    <header
+      class="mt-12 bg-white rounded-3xl shadow-sm max-w-[80rem] mx-auto overflow-hidden -mb-4"
+    >
+      <div class="flex items-center">
+        <div class="px-8 sm:px-24">
+          <h3 class="uppercase mb-4 text-gray-400 pt-8 sm:pt-12 lg:pt-6">
+            Web Developer
+          </h3>
+          <h1
+            class="xl:text-6xl lg:text-5xl text-4xl font-semibold mb-4 xl:mb-8"
+          >
+            Valentin Morice
+          </h1>
+          <h2 class="text-2xl mb-8 lg:mb-0 font-light leading-9">
+            Building reliable, modern and scalable solutions for small
+            businesses and individuals
+          </h2>
+          <div class="pb-10 sm:pb-16 lg:pb-6 xl:pb-0">
+            <button
+              class="lg:mt-6 xl:mt-12 mb-4 sm:mb-0 text-xl font-semibold py-3 px-6 text-white border-2 border-gray-800 bg-gray-800 rounded-lg hover:border-blue-900 hover:bg-blue-900 transition-all mr-6"
+            >
+              <a href="#contact">Contact Me</a></button
+            ><button
+              class="lg:mt-6 xl:mt-12 text-xl font-semibold py-3 px-6 text-gray-800 border-2 border-gray-800 rounded-lg hover:bg-gray-100 transition-all"
+            >
+              <a href="#learnMore">Learn More</a>
+            </button>
+          </div>
+        </div>
+        <img
+          src="./img/header.png"
+          alt="portrait"
+          class="w-1/2 hidden lg:block"
+        />
+      </div>
+    </header>
+    <section
+      id="learnMore"
+      class="flex lg:flex-row flex-col items-center mx-auto max-w-[80rem] mb-24"
+    >
+      <div class="xl:w-1/2 lg:max-w-[60%]">
+        <img
+          src="./img/me.png"
+          alt="portrait"
+          class="lg:w-32 sm:w-28 w-24 rounded-3xl mx-auto translate-y-1/2 md:translate-x-3/4 border-white shadow-sm"
+        />
+        <div
+          class="bg-white rounded-3xl shadow-sm px-8 sm:px-24 xl:pt-12 lg:pt-10 lg:pb-10 xl:pb-16"
+        >
+          <h2
+            class="text-4xl font-semibold translate-y-1/2 pt-10 md:pt-8 lg:pt-0 xl:mt-2"
+          >
+            About Me
+          </h2>
+          <p
+            class="xl:mt-12 pt-16 md:pt-16 lg:pt-0 pb-10 sm:pb-16 lg:pb-0 lg:mt-8"
+          >
+            My name is Valentin Morice, and I'm a web developer based in France.
+            I build and customise websites for individuals, small businesses and
+            the likes using up-to-date technologies. My day-to-day tools are
+            <strong>PHP</strong>, <strong>JavaScript</strong>,
+            <strong>WordPress</strong> and <strong>Laravel</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="sm:px-24 mx-auto">
+        <h2 class="text-4xl font-semibold text-gray-300 mb-6 mt-16">
+          Learn More
+        </h2>
+        <div class="flex gap-6 justify-between mt-12">
+          <img src="./img/github.png" alt="github" class="w-10" />
+          <img src="./img/upwork.png" alt="upwork" class="w-10" />
+          <img src="./img/linkedin.png" alt="upwork" class="w-10" />
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="mx-auto max-w-[80rem] mb-24">
+      <div class="flex mx-auto items-center mb-4 justify-center gap-4">
+        <h2 class="text-4xl font-semibold">WordPress</h2>
+        <ion-icon
+          name="logo-wordpress"
+          class="w-16 h-16 text-gray-300"
+        ></ion-icon>
+      </div>
+      <div class="mt-16 grid xl:grid-cols-4 lg:grid-cols-2 gap-6">
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="albums-outline"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">Custom Themes</h3>
+          <p>
+            I build custom themes from scratch, with selected packages and
+            following WordPress best practices.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="add-circle-outline"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">Custom Plugins</h3>
+          <p>
+            I can add features to WordPress Core according to your needs, by
+            writing a variety of plugins.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="cube-outline"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">Gutenberg Blocks</h3>
+          <p>
+            As WordPress grows more and more towards Gutenberg, I create custom
+            blocks suiting your needs.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="code-outline"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">HTML Templates</h3>
+          <p>
+            Templates are a great way to kickstart your project. I can transform
+            any into a working WordPress theme.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="mx-auto max-w-[80rem] mt-12 mb-24">
+      <div class="flex mx-auto items-center mb-4 justify-center gap-4">
+        <h2 class="text-4xl font-semibold">Laravel</h2>
+        <ion-icon
+          name="logo-laravel"
+          class="w-16 h-16 text-gray-300"
+        ></ion-icon>
+      </div>
+      <div class="mt-16 grid xl:grid-cols-4 md:lg:grid-cols-2 gap-6">
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="logo-vue"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">Vue.js</h3>
+          <p>
+            Vue.js is a lightweight JavaScript framework. It is a powerful tool
+            to produce reactive interfaces.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="cog-outline"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">API Development</h3>
+          <p>
+            APIs are what make the web what it is. I can build end-points to
+            serve your data quickly and securely.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="analytics-outline"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">SQL Databases</h3>
+          <p>
+            I have experience working with relational databases, building
+            queries and managing extensive data.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 flex flex-col shadow-sm pb-10">
+          <ion-icon
+            name="hammer-outline"
+            class="w-16 h-16 self-center mb-8 text-gray-600"
+          ></ion-icon>
+          <h3 class="text-2xl font-semibold mb-3">TALL Stack</h3>
+          <p>
+            The TALL stack is a set of tools meant to effortlessly produce
+            server-side applications.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="mx-auto max-w-[80rem] mt-12 mb-24">
+      <div class="flex mx-auto items-center mb-16 justify-center gap-4">
+        <h2 class="text-4xl font-semibold">Testimonials</h2>
+        <ion-icon
+          name="person-circle-outline"
+          class="w-16 h-16 text-gray-300"
+        ></ion-icon>
+      </div>
+      <div
+        id="mySlider"
+        class="md:pb-24 pb-16 relative bg-[#dbdcdd3d] rounded-3xl shadow-inner"
+        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'
+      >
+        <div>
+          <img
+            src="./img/user1.jpg"
+            alt="Person Smiling"
+            class="md:w-32 sm:w-28 w-24 rounded-3xl mx-auto translate-y-1/2 shadow-xl block"
+          />
+          <div
+            class="bg-white w-[95%] lg:w-1/2 mx-auto rounded-3xl p-8 md:p-12 block"
+          >
+            <p class="uppercase mb-2 pt-14 text-gray-400">Joseph Rubino</p>
+            <p>
+              I want to thank Valentin again for not only doing a great job
+              developing my WordPress site, but walking me through all of the
+              steps he took to do so. I highly recommend hiring him!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./img/user2.jpg"
+            alt="close-up portrait of a woman"
+            class="md:w-32 sm:w-28 w-24 rounded-3xl mx-auto translate-y-1/2 shadow-xl block"
+          />
+          <div
+            class="bg-white w-[95%] lg:w-1/2 mx-auto rounded-3xl p-8 md:p-12 block"
+          >
+            <p class="uppercase mb-2 pt-14 text-gray-400">Rasika Nyoman</p>
+            <p>
+              I had a very good working experience with Valentin. He was
+              available all throughout the project and worked quickly. All the
+              issues I had with my website were resolved in one go!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./img/user3.jpg"
+            alt="profile portrait of a men with blue eyes"
+            class="md:w-32 sm:w-28 w-24 rounded-3xl mx-auto translate-y-1/2 shadow-xl block"
+          />
+          <div
+            class="bg-white w-[95%] lg:w-1/2 mx-auto rounded-3xl p-8 md:p-12 block"
+          >
+            <p class="uppercase mb-2 pt-14 text-gray-400">Valentin Radigois</p>
+            <p>
+              I hired Valentin to finish a website that had issues with
+              responsiveness and other changes. Communication is fluid and he
+              did a great job. I would recommend him for your project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="mx-auto max-w-[80rem] mt-12 mb-24">
+      <div class="flex mx-auto items-center mb-16 justify-center gap-4">
+        <h2 class="text-4xl font-semibold">Contact</h2>
+        <ion-icon
+          name="mail-outline"
+          class="w-16 h-16 text-gray-300"
+        ></ion-icon>
+      </div>
+      <form action="" class="flex flex-col gap-6 mx-auto max-w-[50rem] mb-40">
+        <h3 class="text-2xl font-light text-center">Want to Work Together?</h3>
+        <p class="mb-6 text-center">
+          Please drop me a message using the form below.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-between gap-6">
+          <input
+            type="text"
+            class="bg-white py-2 px-3 rounded-xl sm:w-1/2 shadow-sm"
+            placeholder="Name"
+            name="name"
+          />
+          <input
+            type="text"
+            class="bg-white py-2 px-3 rounded-xl sm:w-1/2 shadow-sm"
+            placeholder="Email"
+            name="email"
+          />
+        </div>
+        <input
+          type="text"
+          class="bg-white py-2 px-3 rounded-xl shadow-sm"
+          placeholder="Subject"
+          name="subject"
+        />
+        <textarea
+          name="message"
+          class="py-2 px-3 rounded-xl bg-white shadow-sm"
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+        ></textarea>
+      </form>
+    </section>
+    <footer class="bg-gray-200 rounded-t-3xl max-w-[80rem] mx-auto">
+      <p class="py-4 px-6 text-center text-gray-400">Valentin Morice/2022</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script>
+      $("#mySlider").slick({
+        autoplay: true,
+        speed: 2000,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+
+      $("#hamburger").click(function () {
+        $("#ex1").modal({
+          escapeClose: true,
+          clickClose: true,
+          showClose: false,
+          fadeDuration: 300,
+        });
+      });
+      let scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
